@@ -32,13 +32,13 @@ body{
   width: 100%;
 }
 
-.wrapper .form .inputfield{
+.wrapper .form .inputfield.country{
   margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
 
-.wrapper .form .inputfield label{
+.wrapper .form .country .inputfield label{
    width: 200px;
    color: #757575;
    margin-right: 10px;
@@ -46,7 +46,7 @@ body{
 }
 
 .wrapper .form .inputfield .input,
-.wrapper .form .inputfield .textarea{
+.wrapper .form .inputfield .textarea .country{
   width: 100%;
   outline: none;
   border: 1px solid #d5dbd9;
@@ -56,19 +56,20 @@ body{
   transition: all 0.3s ease;
 }
 
-.wrapper .form .inputfield .textarea{
+.wrapper .form .inputfield .textarea .country{
   width: 100%;
   height: 125px;
   resize: none;
 }
 
-.wrapper .form .inputfield .custom_select{
+.wrapper .form .country .inputfield .custom_select{
   position: relative;
   width: 100%;
   height: 37px;
+  
 }
 
-.wrapper .form .inputfield .custom_select:before{
+.wrapper .form .inputfield .country .custom_select:before{
   content: "";
   position: absolute;
   top: 12px;
@@ -76,9 +77,10 @@ body{
   border: 8px solid;
   border-color: #d5dbd9 transparent transparent transparent;
   pointer-events: none;
+
 }
 
-.wrapper .form .inputfield .custom_select select{
+.wrapper .form .inputfield .country .custom_select select{
   -webkit-appearance: none;
   -moz-appearance:   none;
   appearance:        none;
@@ -90,27 +92,35 @@ body{
   font-size: 15px;
   border: 1px solid #d5dbd9;
   border-radius: 3px;
+
+}
+.inputfield,
+.inputfield-terms{
+  margin-top: 20px;
+}
+.countryname
+ {
+  margin-top: 20px;
 }
 
-
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .textarea:focus,
-.wrapper .form .inputfield .custom_select select:focus{
+.wrapper .form .inputfield  .country.input:focus,
+.wrapper .form .inputfield .country.textarea:focus,
+.wrapper .form .inputfield .country.custom_select select:focus{
   border: 1px solid #77a4c76d;
 }
 
-.wrapper .form .inputfield p{
+.wrapper .form .country .inputfield p{
    font-size: 14px;
    color: #757575;
 }
-.wrapper .form .inputfield .check{
+.wrapper .form .country .inputfield .check{
   width: 15px;
   height: 15px;
   position: relative;
   display: block;
   cursor: pointer;
 }
-.wrapper .form .inputfield .check input[type="checkbox"]{
+.wrapper .form  .inputfield .check input[type="checkbox"]{
   position: absolute;
   top: 0;
   left: 0;
@@ -123,7 +133,7 @@ body{
   display: block;
   position: relative;
 }
-.wrapper .form .inputfield .check .checkmark:before{
+.wrapper .form  .inputfield .check .checkmark:before{
   content: "";
   position: absolute;
   top: 1px;
@@ -143,7 +153,7 @@ body{
   display: block;
 }
 
-.wrapper .form .inputfield .btn{
+.wrapper .form .inputfield .country.btn{
   width: 100%;
    padding: 8px 10px;
   font-size: 15px; 
@@ -155,23 +165,23 @@ body{
   outline: none;
 }
 
-.wrapper .form .inputfield .btn:hover{
+.wrapper .form .inputfield .country.btn:hover{
   background: #77a4c76d;
 }
 
-.wrapper .form .inputfield:last-child{
+.wrapper .form .country.inputfield:last-child{
   margin-bottom: 0;
 }
 
 @media (max-width:420px) {
-  .wrapper .form .inputfield{
+  .wrapper .form .country.inputfield{
     flex-direction: column;
     align-items: flex-start;
   }
-  .wrapper .form .inputfield label{
+  .wrapper .form .country.inputfield label{
     margin-bottom: 5px;
   }
-  .wrapper .form .inputfield.terms{
+  .wrapper .form .country.inputfield.terms{
     flex-direction: row;
   }
 }
